@@ -5,7 +5,7 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import java.util.Properties;
 
-public class SendMail {
+public class EmailService {
     //write sender's E-mail;
     private static final String username = "(sender's e-mail address)@gmail.com";
     //password from google;
