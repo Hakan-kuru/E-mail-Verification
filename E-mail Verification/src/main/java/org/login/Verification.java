@@ -9,18 +9,18 @@ public class VerificationCodeGenerator {
         int code= Random();
         Scanner scanner =new Scanner(System.in);
         int kod ;
-        int denemeHakkı =3;
+        int denemeHakki =3;
         String subject= "site adı";
         String body = "Hi! " + name + "\n 'X'  your verification code to register on our site:\n "+code;
 
-        if (SendMail.sendEmail(to, subject, body)) {
-            while (denemeHakkı > 0) {
+        if (EmailService.sendEmail(to, subject, body)) {
+            while (denemeHakki > 0) {
                 kod = scanner.nextInt();
                 if (kod == code)
                     return true;
                 else {
-                    denemeHakkı -= 1;
-                    System.out.println("wrong code...\ntry again...\nremaining try :" + denemeHakkı);
+                    denemeHakki -= 1;
+                    System.out.println("wrong code...\ntry again...\nremaining try :" + denemeHakki);
                 }
             }
         }return false;
