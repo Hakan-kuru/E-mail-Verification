@@ -4,7 +4,7 @@ import javax.mail.MessagingException;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Verification {
+public class VerificationCodeGenerator {
     private static boolean Verifaction(String name, String to ) throws MessagingException {
         int code= Random();
         Scanner scanner =new Scanner(System.in);
