@@ -5,17 +5,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws MessagingException {
-        /*
-        to = alıcı e maili
-        subject = konu
-        String body = içi
-        */
+        
         Scanner scanner= new Scanner(System.in);
-        System.out.println("write e-mail  ");
-        String to = scanner.nextLine();
+        String recipientEmail = "recipient@example.com";
         System.out.println("name of the person to send");
         String name = scanner.nextLine();
-        Verification.verificationMain(to, name);
+        Verification.verificationMain(recipientEmail, name);
         scanner.close();
+        
     }
 }
